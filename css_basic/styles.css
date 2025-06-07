@@ -1,0 +1,60 @@
+/* Step 1: Make the body a vertical flex container */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the browser */
+  margin: 0; /* Remove default margin */
+}
+
+/* Step 2: Make the main a horizontal flex container */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Fills available space */
+}
+
+/* Step 3: Set proportions - article takes 2 parts, aside takes 1 part */
+article {
+  flex: 2;
+  overflow-y: auto; /* Enable scroll if needed */
+  padding: 10px;
+
+   /* new styles for design */
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* Style the heading inside article */
+article h1 {
+  font-size: 2rem;
+  color: #4CAF50; /* green */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+/* Style paragraphs inside article */
+article p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+aside {
+  flex: 1;
+  overflow-y: auto; /* Enable scroll if needed */
+  padding: 10px;
+}
+
+/* Optional: Style header and footer for clarity */
+header, footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+.logo {
+  font-size: 2rem;     /* makes the logo bigger */
+  color: #ff9800;      /* orange color */
+  padding-right: 10px; /* some space to the right */
+}
